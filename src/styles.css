@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-olive{
+    background-color: #32CD32!important;
+}
+
+.bg-blue{
+    background-color: #0E6EB8!important;
+}
+.text-white{
+    color: #fff!important;
+}
+
+.custom-margin-chattab{
+    margin-top: 1em!important;
+    margin-bottom: 1em!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    background-color: #fff!important;
+}
+
+.custom-message{
+    margin: 1em 0 1em 0!important;
+}
+
+.message-user{
+    width: 80%!important;
+    transition: 0.3s all;
+    
+}
+.message-bot{
+    width: 80%;
+    /* float: right; */
+    margin-left: auto!important;
+}
+
+.custom-footer{
+    background-color: white!important;;
+    position: fixed!important;
+    bottom: 0!important;
+    width: 100%!important;
+}
+
+.message-container{
+    max-height: 100px!important;
+    overflow-wrap: normal;
+    margin-top: 30px!important;
+    padding-top: 40px!important;
+}
+
+.custom-nav{
+    position: fixed!important;
+    background-color: white!important;
+    z-index: 1000;
+    width: 100%;
+    margin-top: -25px!important;
+    padding-top: -25px!important;
+    border-bottom: 1px solid black;
+    
+}
+
+.bg-green{
+    background-color: #016936!important;
+}
+
+.text-center{
+    text-align: center!important;
+}

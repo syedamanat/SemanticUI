@@ -1,0 +1,51 @@
+<div class="twelve wide column custom-nav" >
+
+    <div class="ui text container  custom-margin-chattab" >
+        <div class="ui horizontal list">
+            <div class="item">
+                <img class="ui mini circular image" src="assets/chatlogo.png">
+                <div class="content">
+                    <div class="ui sub header">Tars</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <hr> -->
+
+
+</div>
+
+<div class="twelve wide column message-container" >
+    <div class="ui text container">
+
+        <div class="ui message custom-message message-user" *ngFor="let data of bot_messages">
+            <img [src]="data['image']" class="ui image" alt="" *ngIf="data['image']!=null">
+            <!-- <p>{{data['message']}}</p> -->
+            <div [innerHTML]="data['message']"></div>
+            <small style="display: block;width: 100%;color: grey;">Sent at 10:30AM</small>
+        </div>
+
+
+        <div class="ui message custom-message message-bot bg-blue text-white" *ngFor="let data of user_inputs">
+            <p>{{data}}</p>
+            <!-- <small style="display: block;width: 100%;color: rgb(201, 201, 201);">Sent at 10:30AM</small> -->
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="ui vertical footer segment custom-footer" *ngIf="showResponse">
+
+    <div class="ui action input  center aligned grid" style="width: 96%;margin-left: 10px; margin-top: 15px;margin-bottom: 15px;"  *ngFor="let option of options">
+
+        <!-- <input type="text" placeholder="Search..." [(ngModel)]="user_message"> -->
+        <!-- <button class="ui button" (click)="userMessage()"><i class="paper plane icon"></i></button> -->
+        <button class="ui button text-center center aligned grid" style="width: 75%;text-align: center!important;" [value]="option['val']" (click)="userMessage($event);">{{option['name']}}</button>
+        
+    </div>
+
+</div>
